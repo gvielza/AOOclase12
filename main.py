@@ -1,18 +1,11 @@
-print("Hola desde Replit")
-#-Crear una clase Automóvil con tenga por defecto atributo ruedas inicializado en 4, con un #constructor con los parámetros de color, marca, aceleracion y velocidad
+from clases.automovil import Automovil
+from clases.automovilvolador import AutomovilVolador
 
-class Automovil:
-  ruedas=4
-  def __init__(self,color,marca,aceleracion):
-    self.color=color
-    self.marca=marca
-    self.aceleracion=aceleracion
-    self.velocidad=0
-  def acelera(self):
-    self.velocidad=self.aceleracion+self.velocidad
-  def frena(self):
-    self.velocidad=self.velocidad-self.aceleracion
-    
+
+print("Hola desde Replit")
+#-Crear una clase Automóvil con tenga por defecto atributo ruedas inicializado en 4, con un constructor con los parámetros de color, marca, aceleracion y velocidad
+
+
   #Crear un coche, mostrar por consola las ruedas y la aceleración
 coche1=Automovil("rojo","Toyota",20)
 print(coche1.ruedas)
@@ -28,3 +21,18 @@ coche1.acelera()
 print(f'El coche tiene una velocidad de {coche1.velocidad}')
 coche1.frena()
 print(f'El coche tiene una velocidad de {coche1.velocidad}')
+
+#1-Crear clase AutomovilVolador que herede de Automovil con atributo de 6 ruedas
+
+#Crear un automovilvolador y muestre por consola comportamiento y características 
+automoVolador1=AutomovilVolador("red","Ford",30,True)
+automoVolador2=AutomovilVolador("negro","Audi",50,False)
+print(automoVolador1.vuela())
+
+
+print("*********************clase ************")
+
+
+
+
+
