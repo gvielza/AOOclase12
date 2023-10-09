@@ -1,6 +1,6 @@
 #Crear clase Vehiculo con año(protegido) y modelo(privado)
 class Vehiculo:
-  def __ini__(self,anno,modelo):
+  def __init__(self,anno,modelo):
     self._anno=anno
     self.__modelo=modelo
   #6-Realizar get y set
